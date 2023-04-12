@@ -14,8 +14,7 @@
   padding: 0;
 }
 
-button, a, input, textarea {
-  box-sizing: border-box;
+button, a, input[type="text"], textarea, li{
   min-width: 44px;
   min-height: 44px;
 }
@@ -114,12 +113,14 @@ header{
 }
 
 #top-bar nav ul li a{
+  display: inline-block;
   text-decoration: none;
+  min-height: 44px;
   color: var(--paragraph-text);
 }
 
 #top-bar nav ul li:hover{
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .hero-section{
@@ -137,6 +138,10 @@ header{
 }
 
 .hero-section a{
+  margin: 0px auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--button-text);
   background-color: var(--button-bg);
@@ -273,6 +278,11 @@ footer{
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  button, a, input[type="text"], textarea, li{
+    min-width: 44px;
+    min-height: 44px;
+  }
+
   #restaurant-list{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -294,6 +304,11 @@ footer{
 }
 
 @media only screen and (min-width: 1024px) {
+  button, a, input[type="text"], textarea, li{
+    min-width: 44px;
+    min-height: 44px;
+  }
+
   #restaurant-list{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

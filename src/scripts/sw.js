@@ -7,7 +7,7 @@ const dataRestaurant = data.restaurants
 const restaurantItem = (restaurant) => {
     const {rating, city, pictureId, description, name} = restaurant
     return `
-    <article class="card">
+    <article class="card" tabindex="0">
         <div class="card-image">
             <img src="${pictureId}" alt="A restaurant picture in Kota ${city}">
         </div>
