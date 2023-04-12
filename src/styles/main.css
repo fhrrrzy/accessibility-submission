@@ -179,6 +179,8 @@ header{
 }
 
 .mobile-nav ul li a{
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-size: larger;
   color : var(--headline-text)
